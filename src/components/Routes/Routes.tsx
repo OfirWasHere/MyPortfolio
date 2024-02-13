@@ -1,4 +1,4 @@
-import Main from "../components/Main/Main";
+import Main from '../Main/Main'
 
 const Routes = ([
   {

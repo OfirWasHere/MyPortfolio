@@ -5,7 +5,7 @@ function Navbar() {
   return (
     <Box>
       <AppBar position="static">
-
+        Home
       </AppBar>
     </Box>
   );
