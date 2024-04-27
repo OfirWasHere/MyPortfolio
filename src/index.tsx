@@ -1,18 +1,15 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
+import React from "react";
+import ReactDOM from "react-dom/client";
 import './index.css';
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import reportWebVitals from "./reportWebVitals";
-import Routes from './Components/Routes/Routes'
-import Navbar from './Components/Navbar/Navbar';
+import App from "./App";
 
 const root = ReactDOM.createRoot(
-  document.getElementById('root') as HTMLElement
+  document.getElementById("root") as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    <Navbar/>
-    <RouterProvider router={createBrowserRouter(Routes)}/>
+    <App />
   </React.StrictMode>
 );
 
@@ -20,4 +17,3 @@ root.render(
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
-
