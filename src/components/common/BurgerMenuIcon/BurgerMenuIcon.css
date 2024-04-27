@@ -1,7 +1,34 @@
-.icon-button {
+.burger-icon {
+  width: 30px;
+  height: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
   transition: transform 0.3s ease;
 }
 
-.icon-button.opened {
-  transform: rotate(90deg);
+.burger-icon.open {
+  transform: rotate(180deg);
+}
+
+.burger-icon .line {
+  width: 100%;
+  height: 3px;
+  background-color: #fff;
+  transition: transform 0.3s ease, opacity 0.3s ease, background-color 0.3s ease;
+}
+
+.burger-icon.open .line:nth-child(1) {
+  transform: rotate(45deg) translate(6px, 6px);
+  background-color: orange;
+}
+
+.burger-icon.open .line:nth-child(2) {
+  opacity: 0;
+}
+
+.burger-icon.open .line:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, -6px);
+  background-color: orange;
 }
