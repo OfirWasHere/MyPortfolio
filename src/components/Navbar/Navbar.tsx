@@ -1,16 +1,13 @@
 import React from "react";
-import { AppBar, Box, ThemeProvider } from "@mui/material";
-import theme from "../../Utils/ColorTheme";
 
 function Navbar() {
   return (
-    <ThemeProvider theme={theme}>
-      <Box>
-        <AppBar sx={{ bgcolor: "isPrimary.900" }} position="static">
-          Home
-        </AppBar>
-      </Box>
-    </ThemeProvider>
+    <div></div>
+    // <ThemeProvider theme={theme}>
+    //   <Box position="fixed" pt={8} pl={6}>
+    //     Ofir Doron
+    //   </Box>
+    // </ThemeProvider>
   );
 }
 
