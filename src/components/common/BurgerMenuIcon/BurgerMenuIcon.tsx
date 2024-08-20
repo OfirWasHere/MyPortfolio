@@ -11,7 +11,7 @@ function BurgerMenuIcon() {
   return (
     <Box>
       <IconButton onClick={clickHandler} sx={{ color: "#fff" }}>
-        <div className={`burger-icon ${isOpen ? 'open' : ''}`}>
+        <div className={`burger-icon ${isOpen ? "open" : ""}`}>
           <div className="line"></div>
           <div className="line"></div>
           <div className="line"></div>

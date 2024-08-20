@@ -12,9 +12,7 @@ function Navbar() {
       alignItems="center"
       justifyContent="space-between"
     >
-      <Typography variant="h4">
-        Ofir Doron
-      </Typography>
+      <Typography variant="h4">Ofir Doron</Typography>
       <Box pr={8}>
         <BurgerMenuIcon />
       </Box>
