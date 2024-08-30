@@ -1,11 +1,19 @@
-import React, { useState } from "react";
 import "./BurgerMenuIcon.css";
 import { Box, IconButton } from "@mui/material";
+import { useDispatch, useSelector } from "react-redux";
+import { RootState } from "../../../Redux/RootReducer";
+
 
 function BurgerMenuIcon() {
-  const [isOpen, setIsOpen] = useState(false);
+  const dispatch = useDispatch();
+  const isOpen = useSelector((state: RootState) => state.drawer.isOpen);
+
   const clickHandler = () => {
-    setIsOpen(!isOpen);
+    if (isOpen) {
+      dispatch({ type: "CLOSE_DRAWER" });
+    } else {
+      dispatch({ type: "OPEN_DRAWER" });
+    }
   };
 
   return (
