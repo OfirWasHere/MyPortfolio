@@ -12,7 +12,7 @@ function App() {
       <Provider store={store}>
         <TopDrawer />
         <Navbar />
-        {/* <RouterProvider router={createBrowserRouter(Routes)} /> */}
+        <RouterProvider router={createBrowserRouter(Routes)} />
       </Provider>
     </React.StrictMode>
   );
