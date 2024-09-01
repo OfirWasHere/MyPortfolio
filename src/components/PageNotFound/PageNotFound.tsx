@@ -1,9 +1,15 @@
-import React from 'react'
+import React from "react";
+import Navbar from "../Navbar/Navbar";
+import BurgerMenu from "../BurgerMenu/BurgerMenu";
 
 function PageNotFound() {
   return (
-    <div>PageNotFound</div>
-  )
+    <>
+      <BurgerMenu />
+      <Navbar />
+      <div>PageNotFound</div>
+    </>
+  );
 }
 
-export default PageNotFound
+export default PageNotFound;

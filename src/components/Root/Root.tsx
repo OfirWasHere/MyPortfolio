@@ -1,6 +1,6 @@
 import React from "react";
 import Navbar from "../Navbar/Navbar";
-import TopDrawer from "../TopDrawer/TopDrawer";
+import BurgerMenu from "../BurgerMenu/BurgerMenu";
 import { Outlet, useOutlet } from "react-router-dom";
 import Main from "../Main/Main";
 
@@ -9,7 +9,7 @@ function Root() {
 
   return (
     <>
-      <TopDrawer />
+      <BurgerMenu />
       <Navbar />
       <div>{outlet ? <Outlet /> : <Main />}</div>
     </>
