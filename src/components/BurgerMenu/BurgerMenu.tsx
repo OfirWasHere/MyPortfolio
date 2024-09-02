@@ -6,7 +6,7 @@ import { NavLink } from "react-router-dom";
 import RoutesNav from "../../Routes/RoutesNav";
 import { Box } from "@mui/material";
 
-function BurgerMenu() {
+function BurgerMenu(): JSX.Element {
   const isOpen = useSelector((state: RootState) => state.drawer.isOpen);
   const dispatch = useDispatch();
 

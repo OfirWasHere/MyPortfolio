@@ -4,7 +4,7 @@ import BurgerMenu from "../BurgerMenu/BurgerMenu";
 import { Outlet, useOutlet } from "react-router-dom";
 import Main from "../Main/Main";
 
-function Root() {
+function Root(): JSX.Element {
   const outlet = useOutlet();
 
   return (

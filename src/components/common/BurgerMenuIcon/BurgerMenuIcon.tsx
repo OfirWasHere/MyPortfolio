@@ -5,7 +5,7 @@ import { RootState } from "../../../Redux/RootReducer";
 import React from "react";
 
 
-function BurgerMenuIcon() {
+function BurgerMenuIcon(): JSX.Element {
   const dispatch = useDispatch();
   const isOpen = useSelector((state: RootState) => state.drawer.isOpen);
 

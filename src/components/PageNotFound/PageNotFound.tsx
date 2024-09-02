@@ -2,7 +2,7 @@ import React from "react";
 import Navbar from "../Navbar/Navbar";
 import BurgerMenu from "../BurgerMenu/BurgerMenu";
 
-function PageNotFound() {
+function PageNotFound(): JSX.Element {
   return (
     <>
       <BurgerMenu />

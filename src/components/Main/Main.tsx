@@ -1,6 +1,6 @@
 import React from "react";
 
-function Main() {
+function Main(): JSX.Element {
   return <div>I am main page</div>;
 }
 

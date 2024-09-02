@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Contact () {
+function Contact (): JSX.Element {
   return (
     <div>Contact page</div>
   )

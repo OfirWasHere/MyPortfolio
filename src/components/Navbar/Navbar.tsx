@@ -3,7 +3,7 @@ import "./Navbar.css";
 import { Box, Typography } from "@mui/material";
 import BurgerMenuIcon from "../common/BurgerMenuIcon/BurgerMenuIcon";
 
-function Navbar() {
+function Navbar(): JSX.Element {
   return (
     <Box
       pt={6}
