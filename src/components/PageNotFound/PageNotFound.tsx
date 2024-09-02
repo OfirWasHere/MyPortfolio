@@ -7,7 +7,7 @@ function PageNotFound() {
     <>
       <BurgerMenu />
       <Navbar />
-      <div>PageNotFound</div>
+      <div>PageNotFound.....</div>
     </>
   );
 }

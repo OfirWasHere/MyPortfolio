@@ -18,6 +18,10 @@ const Routes = [
         path: "contact",
         element: <Contact />,
       },
+      {
+        path: "art portfolio",
+        element: <Contact />,
+      },
     ],
   },
 ];
