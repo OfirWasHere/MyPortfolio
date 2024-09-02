@@ -1,8 +1,8 @@
 import React from "react";
-import Main from "../Components/Main/Main";
-import Root from "../Components/Root/Root";
-import PageNotFound from "../Components/PageNotFound/PageNotFound";
-import Contact from "../Components/Contact/Contact";
+import Main from "../components/Main/Main";
+import Root from "../components/Root/Root";
+import PageNotFound from "../components/PageNotFound/PageNotFound";
+import Contact from "../components/Contact/Contact";
 
 const Routes = [
   {
