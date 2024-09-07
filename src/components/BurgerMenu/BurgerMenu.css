@@ -7,7 +7,7 @@
     background-color: #161920;
     text-align: center;
     overflow: hidden;
-    transition: height 1s ease;
+    transition: height 0.75s ease;
 }
 
 .is-open {
@@ -21,7 +21,6 @@
 .NavLinks {
     color: rgb(255, 255, 255);
     text-decoration: none;
-    font-size: 60px;
     margin: 20px;
     position: relative;
     overflow: hidden;
@@ -43,7 +42,7 @@
 
 .NavLinks:hover {
     color: #ff9100;
-    letter-spacing: 0.5px; 
+    letter-spacing: 0.5px;
 }
 
 .NavLinks:hover::before {

@@ -4,7 +4,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { RootState } from "../../Redux/RootReducer";
 import { NavLink } from "react-router-dom";
 import RoutesNav from "../../Routes/RoutesNav";
-import { Box } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 
 function BurgerMenu(): JSX.Element {
   const isOpen = useSelector((state: RootState) => state.drawer.isOpen);
@@ -18,7 +18,19 @@ function BurgerMenu(): JSX.Element {
         key={index}
         onClick={clickHandler}
       >
-        {route.routeName}
+        <Typography
+          sx={{
+            fontSize: {
+              xs: "40px",
+              sm: "60px",
+              md: "80px",
+              lg: "100px",
+            },
+            transition: "font-size 0.3s ease-in-out",
+          }}
+        >
+          {route.routeName}
+        </Typography>
       </NavLink>
     ));
   }
