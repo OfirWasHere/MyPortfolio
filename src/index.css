@@ -3,7 +3,6 @@ html {
   top: 0;
   padding: 0px;
   background-color: rgb(15 23 42);
-  color: rgb(226 232 240);
 }
 
 /* @font-face {
@@ -18,4 +17,3 @@ html {
 body {
   font-family: 'Open Sans', sans-serif;
 }
-
