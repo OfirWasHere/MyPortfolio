@@ -2,13 +2,20 @@ html {
   margin: 0px;
   top: 0;
   padding: 0px;
-  background-color: #1d2025;
-  color: #fff;
+  background-color: rgb(15 23 42);
+  color: rgb(226 232 240);
 }
 
-@font-face {
+/* @font-face {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 350;
   src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v27/KFOmCnqEu92Fr1Mu4mxP.ttf) format('truetype');
+} */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+body {
+  font-family: 'Open Sans', sans-serif;
 }
+

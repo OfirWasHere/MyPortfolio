@@ -12,7 +12,8 @@ function Main(): JSX.Element {
         </Grid>
         <Grid item xl={6}>
           <Typography variant="h3">Hey, I'm Ofir</Typography>
-          <Typography variant="h5" my={"20px"}>
+          <Typography variant="h5">Junior Frontend Developer</Typography>
+          <Typography variant="h6" my={"20px"}>
             I'm a passionate frontend developer based in Tel Aviv, Israel, with
             over 1.5 years of experience building responsive and dynamic web
             applications. I specialize in Vue, React, TypeScript, and modern web
@@ -22,12 +23,8 @@ function Main(): JSX.Element {
             me a unique eye for detail, ensuring that no design element gets
             lost in translation.
           </Typography>
-          <Typography variant="h5">
-            Let's build something awesome together!
-          </Typography>
         </Grid>
       </Grid>
-      <Box pl={"50px"}></Box>
     </Box>
   );
 }

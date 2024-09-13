@@ -6,12 +6,16 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import Routes from "./Routes/Routes";
 import store from "./Store/Store";
 import { Provider } from "react-redux";
+import { ThemeProvider } from "@mui/material";
+import theme from "./CustomTheme";
 
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <React.StrictMode>
-    <Provider store={store}>
-      <RouterProvider router={createBrowserRouter(Routes)} />
-    </Provider>
+    <ThemeProvider theme={theme}>
+      <Provider store={store}>
+        <RouterProvider router={createBrowserRouter(Routes)} />
+      </Provider>
+    </ThemeProvider>
   </React.StrictMode>
 );
 
