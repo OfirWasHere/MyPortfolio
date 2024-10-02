@@ -6,14 +6,17 @@ import BurgerMenuIcon from "../common/BurgerMenuIcon/BurgerMenuIcon";
 function Navbar(): JSX.Element {
   return (
     <Box
-      pt={6}
-      pl={8}
+      className="navbar"
+      color="primary.100"
+      p={4}
       display="flex"
       alignItems="center"
       justifyContent="space-between"
     >
-      <Typography variant="h4">Ofir Doron</Typography>
-      <Box pr={8}>
+      <Typography variant="h4" pl={4}>
+        Ofir Doron
+      </Typography>
+      <Box>
         <BurgerMenuIcon />
       </Box>
     </Box>

@@ -3,11 +3,11 @@ import RoutesModel from "../Models/RoutesModel"
 const RoutesNav: RoutesModel[] = [
     {
         path:'home',
-        routeName:'Home Page'
+        routeName:'Home'
     },
     {
         path:'contact',
-        routeName:'Contact Page'
+        routeName:'Contact'
     },
     {
         path:'art portfolio',

@@ -3,45 +3,53 @@ import image from "../../Assets/Images/OfirImage.jpg";
 import { Box, Typography } from "@mui/material";
 import Grid from "@mui/material/Unstable_Grid2/Grid2";
 import "./Main.css";
+import { mainPage } from "../../Strings/MainPage";
 
 function Main(): JSX.Element {
   return (
     <Box>
-      <Box display="flex" py={10}>
-        <Grid container spacing={2}>
-          <Grid maxWidth="600px" xl={6} lg={6} md={12} sm={12}>
+      <Box display="flex" height={"100vh"}>
+        <Grid
+          container
+          spacing={2}
+          justifyContent={"center"}
+          alignContent={"center"}
+          flexWrap={"wrap"}
+        >
+          <Grid xl={5} lg={6} md={12} sm={12}>
             <img src={image} className="main-image" alt="ofir doron" />
           </Grid>
-          <Grid xl={6} lg={6} md={12} sm={12}>
+          <Grid xl={5} lg={6} md={12} sm={12}>
             <Typography variant="h3" color="primary.100">
-              Hey, I'm Ofir
+              {mainPage.Hero}
             </Typography>
             <Typography variant="h5" color="primary.100">
-              Junior Frontend Developer
+              {mainPage.subHero}
             </Typography>
-            <Typography variant="h6" color="primary.300" my="20px">
-              I'm a passionate frontend developer based in Tel Aviv, Israel,
-              with over 1.5 years of experience building responsive and dynamic
-              web applications. I specialize in Vue, React, TypeScript, and
-              modern web technologies to create clean, user-friendly interfaces.
-              I'm always eager to learn and grow. When I'm not coding, you'll
-              find me working on creative art projects. Being both an artist and
-              a developer gives me a unique eye for detail, ensuring that no
-              design element gets lost in translation.
+            <Typography variant="h6" my="20px" color="primary.300">
+              {mainPage.subtext}
             </Typography>
           </Grid>
         </Grid>
       </Box>
-      <hr className="hr-1" />
-      <Box display="block">
-        <Typography
-          variant="h4"
-          display="flex"
-          justifyContent="center"
-          color="primary.100"
-        >
-          My Journey
-        </Typography>
+      <div>
+        There should be down arrow here that when clicked pushes the user down
+      </div>
+      <Box height={"100vh"}>
+        <hr className="hr-1" />
+        <Box display="block">
+          <Typography
+            variant="h4"
+            display="flex"
+            justifyContent="center"
+            color="primary.100"
+          >
+            {mainPage.aboutMeHeader}
+          </Typography>
+          <Typography variant="h6" color="primary.300" my="20px">
+            {mainPage.aboutMeText}
+          </Typography>
+        </Box>
       </Box>
     </Box>
   );
